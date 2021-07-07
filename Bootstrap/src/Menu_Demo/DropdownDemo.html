@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+    <div class="dropdown" id="myDropdown">
+<!--        data-toggle="dropdown" 不可缺少-->
+        <button class="btn btn-default" id="dLabel" type="button" data-toggle="dropdown">
+            下拉菜单
+        <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li>Gnar</li>
+            <li>Kindred</li>
+            <li>Neeko</li>
+        </ul>
+    </div>
+<script src="../jquery-3.4.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script>
+    $("#myDropdown").on("shown.bs.dropdown",function (e) {
+        alert("Hello!");
+    })
+</script>
+</body>
+</html>

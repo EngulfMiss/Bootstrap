@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gridsystem</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <style>
+        .row{
+            margin-bottom: 20px;
+        }
+
+        .row .row{
+            margin-top:10px;
+            margin-bottom: 0;
+        }
+
+
+          /*
+            [class*="包含此处子块的所有类"]{
+
+            }
+         */
+
+        [class*="col"]{
+            padding-top:15px;
+            padding-bottom: 15px;
+            /*background-color: #eee;*/
+            background-color: rgba(86,61,124,.15);
+            /*border:1px solid #ddd;*/
+            border:1px solid rgba(86,61,124,.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- 每一行最多承载12列 -->
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+            <div class="col-lg-1">col-lg-1</div>
+        </div>
+
+        <div class="row">
+            <!-- 每一行最多承载12列 -->
+            <div class="col-lg-3">col-lg-3</div>
+            <div class="col-lg-3">col-lg-3</div>
+            <div class="col-lg-3">col-lg-3</div>
+            <div class="col-lg-3">col-lg-3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3">col-lg-3col-lg-3col-lg-3col-lg-3col-lg-3col-lg-3col-lg-3col-lg-3col-lg-3col-lg-3</div>
+            <div class="col-lg-3">col-lg-3</div>
+            <div class="col-lg-3">col-lg-3</div>
+            <div class="col-lg-3">col-lg-3</div>
+        </div>
+
+        <!--偏移 col-lg-offset-偏移格数-->
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">col-lg-4</div>
+        </div>
+
+        <!-- 栅格嵌套 -->
+        <div class="row">
+            <div class="col-sm-9">
+                one
+                <div class="row">
+                    <div class="col-lg-8">
+                        first
+                    </div>
+                    <div class="col-lg-4">
+                        second
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--列的排序
+            col-md-pull-拉出格数  左
+            col-md-push-推进格数  右
+        -->
+        <div class="row">
+            <div class="col-md-2 col-md-push-1">col-md-2</div>
+            <div class="col-md-5">col-md-5</div>
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-2">col-md-2.2</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        #myCarousel{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="myCarousel">
+<!--        data-interval 轮播间隔时间-->
+        <div id="carousel-example-generic" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../images/kindred2.jpg">
+                    <div class="carousel-caption">
+                        <h3>死亡之灵</h3>
+                        <p>Kindred</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../images/kindred2.jpg">
+                    <div class="carousel-caption">
+                        <h3>死亡之灵</h3>
+                        <p>Kindred</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../images/kindred2.jpg">
+                    <div class="carousel-caption">
+                        <h3>死亡之灵</h3>
+                        <p>Kindred</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+<script src="../jquery-3.4.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script>
+    $(".carousel").carousel({
+        interval:2000
+    });
+</script>
+</body>
+</html>

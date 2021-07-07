@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+    <!--
+        内联表单 :添加 class="form-inline"
+        label 中 class="sr-only" 可以隐藏label
+    -->
+    <form role="form" class="form-inline">
+        <div class="form-group">
+            <label class="sr-only">用户名</label>
+            <input type="text" class="form-control" placeholder="user">
+            <label class="sr-only">密码</label>
+            <input type="password" class="form-control" placeholder="password">
+        </div>
+
+        <div class="form-group">
+            <label class="sr-only">选择文件</label>
+            <input type="file">
+            <p class="help-block">选择你需要的文件</p>
+        </div>
+    </form>
+</body>
+</html>

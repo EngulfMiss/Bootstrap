@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample">点击查看</a>
+        <div class="collapse" id="collapseExample">
+            <div class="well">
+                Hello
+            </div>
+        </div>
+
+<!--        手风琴效果-->
+        <div class="panel-group" id="accordion" role="tablist">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">item1</a>
+                    </h4>
+                </div>
+
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+                    <div class="panel-body">
+                        欢迎来到德莱联盟
+                        欢迎来到德莱联盟
+                        欢迎来到德莱联盟
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">item2</a>
+                    </h4>
+                </div>
+
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        欢迎来到英雄联盟
+                        欢迎来到英雄联盟
+                        欢迎来到英雄联盟
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">item3</a>
+                    </h4>
+                </div>
+
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        欢迎来到祖安
+                        欢迎来到祖安
+                        欢迎来到祖安
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+<script src="../jquery-3.4.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script>
+    $("#accordion").on("hide.bs.collapse",function (e) {
+        alert("隐藏了");
+    })
+</script>
+</body>
+</html>

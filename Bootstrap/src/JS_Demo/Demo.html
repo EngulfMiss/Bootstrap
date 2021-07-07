@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $(".js-popover").popover;
+        $(".js-tooltip").tooltip;
+    })
+    alert($.fn.tooltip.Constructor.VERSION);
+</script>
+<noscript>
+    当前浏览器不支持javascript
+</noscript>
+</body>
+</html>

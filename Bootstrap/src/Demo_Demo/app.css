@@ -1,0 +1,141 @@
+h1,h3,p,a,button{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.onepage{
+    height: 750px;
+}
+
+.onepage-bg{
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+}
+
+#onepagebg{
+    background-image: url("../images/kindred2.jpg");
+}
+
+.head1content{
+    margin-top: 150px;
+    line-height: 75px;
+}
+
+.title-text{
+    margin-left: 10px;
+}
+
+.headfontsize h1{
+    font-size: 50pt;
+    color: #ffffff;
+}
+
+.headfontsize p{
+    color: #ffffff;
+}
+
+/*-------------------------------------------*/
+/*.twopage-bg{*/
+/*    height: 800px;*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    background-position: center center;*/
+/*    background-size: cover;*/
+/*}*/
+
+/*#twopagebg{*/
+/*    background-image: url("images/4.png");*/
+/*}*/
+
+.twopage{
+    width: 100%;
+    padding: 2px 0 0 2px;
+    height: auto;
+    position: relative;
+}
+
+.twopage-text{
+    width: 100%;
+    text-align: center;
+}
+
+.twopage-text-h1{
+    margin-left:120px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 20px 0 0 0;
+}
+
+.twopage-text-h1 img{
+    width: 120px;
+    margin-top: -20px;
+}
+
+.twopage .row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.twopage-course{
+    float: left;
+    background: #ffffff;
+    padding: 0 2px 2px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.twopage-course > a{
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.classicon h3{
+    /*中间文字高度*/
+    margin-top: 180px;
+    color: #d1e973;
+}
+
+.classicon h1{
+    color: #fff5e1;
+}
+
+.classicon{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    /*透明度*/
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transitin:opacity 0.5s;
+}
+
+.classicon:hover{
+    background: #1eb450;
+    opacity: 0.9;
+    transition: opacity 0.5s;
+    -webkit-transitin:opacity 0.5s;
+}
+
+.twopagebtn{
+    width: 100%;
+    margin: 0% auto;
+    text-align: center;
+}
+
+.twopagebtn .btn-lg{
+    font-size: 20px;
+}
+
+#twopage-easy{
+    margin: 50px 0;
+    margin-bottom: 50px;
+}

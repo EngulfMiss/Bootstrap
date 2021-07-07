@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <form role="form">
+            <!--
+            <fieldset disabled>
+                可以让整个表单不可用
+            </fieldset>
+            -->
+        <input type="text" class="form-control">
+        <textarea class="form-control" rows="5">Hello</textarea>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">Gnar
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">Neeko
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">Kindred
+            </label>
+        </div>
+
+        <div class="col-md-4 form-inline">
+            <div class="radio col-md-2">
+                <label>
+                    <input type="radio" checked name="radio">男
+                </label>
+            </div>
+
+            <div class="radio col-md-4">
+                <label>
+                    <input type="radio" checked name="radio">女
+                </label>
+            </div>
+        </div>
+
+
+        <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+
+        <input class="form-control" type="text" placeholder="Hello" disabled>
+
+        <input class="form-control" type="text" readonly>
+
+    </form>
+</div>
+</body>
+</html>

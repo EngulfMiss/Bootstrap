@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+<!--            aria-haspopup :true表示点击的时候会出现菜单或是浮动元素； false表示没有pop-up效果。-->
+<!--            aria-expanded:表示展开状态。默认为undefined, 表示当前展开状态未知。其它可选值：true表示元素是展开的；false表示元素不是展开的。-->
+            <button class="btn btn-default" id="dlabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                下拉菜单
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+                <li>Gnar</li>
+                <li>Kindred</li>
+                <li>Neeko</li>
+            </ul>
+        </div>
+    </div>
+<script src="../jquery-3.4.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <button type="button" data-loading-text="Loading for 3 seconds" class="btn btn-primary js-loading-btn">点击</button>
+
+        <button type="button" class="btn btn-default" data-toggle="button" autocomplete="off">点击2</button>
+
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default active">
+                <input type="checkbox" autocomplete="off">选择1
+            </label>
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off">选择2
+            </label>
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off">选择3
+            </label>
+        </div>
+
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" name="options" autocomplete="off">单选1
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" autocomplete="off">单选2
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" autocomplete="off">单选3
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" autocomplete="off">单选4
+            </label>
+        </div>
+
+        <button type="button" data-complete-text="finish" class="btn btn-default mybtn" autocomplete="off">Hello</button>
+    </div>
+<script src="../jquery-3.4.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script>
+    $(".js-loading-btn").on("click",function (e) {
+        var btn = $(this).button("loading");
+        setTimeout(function (e) {
+            btn.button("reset");
+        },3000);
+    })
+
+    $(".mybtn").on("click",function (e) {
+        $(this).button("complete");
+    })
+</script>
+</body>
+</html>

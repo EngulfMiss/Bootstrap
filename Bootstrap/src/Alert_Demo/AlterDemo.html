@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>警告信息</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+<!--        fade in 都要有-->
+<!--        data-dismiss="alert" 关闭按钮要生效就要有这句话-->
+        <div class="alert alert-info fade in" id="myalert">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>英雄联盟</strong>欢迎S11
+        </div>
+
+        <div class="alert alert-info fade in" id="myalert1">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>英雄联盟</strong>欢迎S11
+            <button type="button" class="btn btn-primary">详情</button>
+        </div>
+    </div>
+<script src="../jquery-3.4.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script>
+    $("#myalert").alert("close");
+    $("#myalert1").on("close.bs.alert",function (e) {
+        console.log("触发了");
+    })
+</script>
+</body>
+</html>

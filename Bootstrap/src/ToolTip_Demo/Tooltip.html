@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工具提示</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <p class="muted" style="margin-bottom: 0">
+            欢迎来到<a id="mytooltip" href="#" data-toggle="tooltip" title="标题" data-placement="bottom" data-original-title="www.baidu.com">英雄联盟</a>
+        </p>
+    </div>
+<script src="../jquery-3.4.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script>
+    $('[data-toggle="tooltip"]').tooltip();
+    // $("#mytooltip").tooltip("show")
+</script>
+</body>
+</html>
